@@ -16,10 +16,18 @@ New-AzResourceGroupDeployment -TemplateFile '.\PATH TO FILE\VNet-example.bicep' 
 
 The first objective is to add parameters. The name and address space of the VNet are now hardcoded in the Bicep template:
 
-![Hardcoded Parameters](https://github.com/Ruthhl3ss/AzureDevOpsCourse/blob/main/Images/BicepExtension.png)
+![Hardcoded Parameters](https://github.com/Ruthhl3ss/AzureDevOpsCourse/blob/main/Images/VNethardcodedparameters.png)
+
+We would like to use this template for multiple customers without changing the template. This objective can be reached by using parameters.
+
+[Microsoft Doc about Bicep Parameters](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/parameters)
 
 
 ### Objective 2 - Adding Subnet
+
+The second objective is to a subnet to the Bicep template. This can be achieved in multiple ways. You can add a resource to the bicep template or you can add it to VNet resource within the Bicep template. **Remember to use Parameters**
+
+[Microsoft Doc about Bicep Template for Subnet Deployment](https://docs.microsoft.com/en-us/azure/templates/microsoft.network/virtualnetworks/subnets?tabs=bicep)
 
 
 ### Objective 3 - Adding Routing Table
