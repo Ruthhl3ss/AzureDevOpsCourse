@@ -1,6 +1,8 @@
 
+param vnetname string = ''
+
 resource vnet 'Microsoft.Network/virtualNetworks@2020-06-01' = {
-  name: 'WE-VNet-001'
+  name: vnetname
   location: resourceGroup().location
 
   properties: {

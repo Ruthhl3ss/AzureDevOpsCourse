@@ -6,10 +6,16 @@ In this folder you will find the VNet-example.bicep file which is the starting p
 
 [Microsoft Doc about Bicep Template for VNet Deployment](https://docs.microsoft.com/en-us/azure/templates/microsoft.network/virtualnetworks?tabs=bicep)
 
-You can deploy this template by using the following code: (change the parameters accordingly)
+You can deploy this template by using the following code in Azure CLI: (change the parameters accordingly)
 
 ````Powershell
-New-AzResourceGroupDeployment -TemplateFile '.\PATH TO FILE\VNet-example.bicep' -ResourceGroupName RESOURCEGROUPNAME
+az login
+
+az account set --subscription <subscription id>
+
+az group create --location <westeurope> --name <biceptesting>
+
+az deployment group create --resource-group <resource-group-name> --template-file <path-to-template> --parameters <parameters>
 ````
 
 ### Objective 1 - Adding Parameters
@@ -49,3 +55,5 @@ Use this blog to create the Pipeline. **There is a starter YAML File in this rep
 
 
 [Blog by 4bes.nl about deploying Bicep Templates via Azure DevOps](https://4bes.nl/2021/04/18/step-by-step-deploy-bicep-with-azure-devops-pipelines/)
+
+In the "SupportingFiles" Folder, you will find the ARM template for the empty resource group.
