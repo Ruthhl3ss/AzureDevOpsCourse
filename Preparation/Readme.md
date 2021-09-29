@@ -48,6 +48,10 @@ bicep --help
 
 ````
 
-### Clone this repository in your VS Code
+### Clone this repository in your Visual Studio Code
 
-Lastly, I would advise you to clone this repository
+Lastly, I would advise you to clone this repository in your Visual Studio Code.
+
+Copy the URL of the Repository:
+
+![Image of CopyURL](https://github.com/Ruthhl3ss/AzureDevOpsCourse/blob/main/Images/BicepExtension.png)
