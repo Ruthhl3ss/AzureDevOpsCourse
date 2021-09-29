@@ -15,6 +15,16 @@ You can do so by opening VS Code and installing the Extension
 
 ![Image of BicepExtension](https://github.com/Ruthhl3ss/AzureDevOpsCourse/blob/main/Images/BicepExtension.png)
 
+### Install Azure CLI
+
+Azure CLI is needed to test Bicep Templates directly on your machine via Visual Studio Code.
+
+You can install Azure CLI by running the following code:
+
+````Powershell
+Invoke-WebRequest -Uri https://aka.ms/installazurecliwindows -OutFile .\AzureCLI.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I AzureCLI.msi /quiet'; rm .\AzureCLI.msi
+````
+
 
 ### Installing Powershell 7
 
