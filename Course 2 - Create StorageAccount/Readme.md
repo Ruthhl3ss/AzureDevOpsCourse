@@ -38,7 +38,7 @@ The second objective is to a FileShare to the Bicep template. This can be achiev
 
 ### Objective 3 - Add a Private EndPoint to the Storage Account
 
-**This objective is optional**. If you are way ahead of the rest of colleagues in the class, try to add a private endpoint to your StorageAccount deployment. This requires another resource in the Bicep Template of the StorageAccount . 
+**This objective is optional**. If you are way ahead of the rest of colleagues in the class, try to add a private endpoint to your StorageAccount deployment. This requires another resource in the Bicep Template of the StorageAccount. **This is a tricky one!** 
 
 [Microsoft Doc about Bicep Template for Route Table Deployment](https://docs.microsoft.com/en-us/azure/templates/microsoft.network/routetables?tabs=bicep)
 
