@@ -28,7 +28,6 @@ We would like to use this template for multiple customers without changing the t
 
 [Microsoft Doc about Bicep Parameters](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/parameters)
 
-
 ### Objective 2 - Adding Subnet
 
 The second objective is to a subnet to the Bicep template. This can be achieved in multiple ways. You can add a resource to the bicep template or you can add it to VNet resource within the Bicep template. **Remember to use Parameters**
