@@ -41,3 +41,11 @@ The second objective is to a subnet to the Bicep template. This can be achieved 
 
 ### Objective 4 - Deploy Template via YAML
 
+This is, at least for me, the most important objective. This where it all comes together. We are going to automate the deployment process by using a YAML pipeline in Azure DevOps.
+
+We have the Bicep template which contains the VNet + subnet( + RouteTable). We have added parameters to the template so we can use it for multiple customers. Now we are going to deploy this template via Azure DevOps.
+
+Use this blog to create the Pipeline. **There is a starter YAML File in this repository called VNet.yml use this as your starting point!**
+
+
+[Blog by 4bes.nl about deploying Bicep Templates via Azure DevOps](https://4bes.nl/2021/04/18/step-by-step-deploy-bicep-with-azure-devops-pipelines/)
