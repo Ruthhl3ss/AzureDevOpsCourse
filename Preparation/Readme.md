@@ -31,7 +31,7 @@ Bicep needs to be installed on your machine. That way, you are able to decompile
 
 You can download the Bicep software by running the following code:
 
-````
+````Powershell
 # Create the install folder
 $installPath = "$env:USERPROFILE\.bicep"
 $installDir = New-Item -ItemType Directory -Path $installPath -Force
@@ -45,6 +45,5 @@ if (-not $env:path.Contains($installPath)) { $env:path += ";$installPath" }
 # Verify you can now access the 'bicep' command.
 bicep --help
 # Done!
-
 
 ````
