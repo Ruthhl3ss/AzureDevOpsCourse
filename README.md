@@ -13,3 +13,4 @@ Please start by exploring the preparation folder. This contains the prequisites 
 After that you can start with building course 1 and after that course 2 etc..
 
 Each course contains a Read.me file which explains the objective of the course.
+

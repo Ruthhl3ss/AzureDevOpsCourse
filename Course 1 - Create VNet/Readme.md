@@ -32,6 +32,12 @@ The second objective is to a subnet to the Bicep template. This can be achieved 
 
 ### Objective 3 - Adding Routing Table
 
+**This objective is optional**. If you are way ahead of the rest of colleagues in the class, try to add a routing table to your VNet deployment. This requires another resource in the Bicep Template of the VNet. 
+
+[Microsoft Doc about Bicep Template for Route Table Deployment](https://docs.microsoft.com/en-us/azure/templates/microsoft.network/routetables?tabs=bicep)
+
+**Important**, since there is probably no Virtual Appliance in your subnet, create a simple route for 0.0.0.0/0 to be routed to 'Virtual Network' and use Bicep to connect it the subnet created in Objective 2
 
 
 ### Objective 4 - Deploy Template via YAML
+
