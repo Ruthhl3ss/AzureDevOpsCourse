@@ -14,3 +14,37 @@ After that, please install the 'Bicep' language extension for Visual Studio Code
 You can do so by opening VS Code and installing the Extension
 
 ![Image of BicepExtension](https://github.com/Ruthhl3ss/AzureDevOpsCourse/blob/main/Images/BicepExtension.png)
+
+
+### Installing Powershell 7
+
+In order to use Bicep in Windows I would advise you to use install Powershell 7.
+
+You can download Powershell here:
+
+[Download Powershell 7](https://github.com/PowerShell/PowerShell/releases/download/v7.1.4/PowerShell-7.1.4-win-x64.msi)
+
+
+### Install Bicep language
+
+Bicep needs to be installed on your machine. That way, you are able to decompile ARM Templates and deploy Bicep Templates directly from your machine.
+
+You can download the Bicep software by running the following code:
+
+````
+# Create the install folder
+$installPath = "$env:USERPROFILE\.bicep"
+$installDir = New-Item -ItemType Directory -Path $installPath -Force
+$installDir.Attributes += 'Hidden'
+# Fetch the latest Bicep CLI binary
+(New-Object Net.WebClient).DownloadFile("https://github.com/Azure/bicep/releases/latest/download/bicep-win-x64.exe", "$installPath\bicep.exe")
+# Add bicep to your PATH
+$currentPath = (Get-Item -path "HKCU:\Environment" ).GetValue('Path', '', 'DoNotExpandEnvironmentNames')
+if (-not $currentPath.Contains("%USERPROFILE%\.bicep")) { setx PATH ($currentPath + ";%USERPROFILE%\.bicep") }
+if (-not $env:path.Contains($installPath)) { $env:path += ";$installPath" }
+# Verify you can now access the 'bicep' command.
+bicep --help
+# Done!
+
+
+````
