@@ -47,3 +47,7 @@ bicep --help
 # Done!
 
 ````
+
+### Clone this repository in your VS Code
+
+Lastly, I would advise you to clone this repository
