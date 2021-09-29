@@ -20,9 +20,9 @@ az deployment group create --resource-group <resource-group-name> --template-fil
 
 ### Objective 1 - Adding Parameters
 
-The first objective is to add parameters. The name and address space of the VNet are now hardcoded in the Bicep template:
+The first objective is to add parameters. The name and address space of the StorageAccount are now hardcoded in the Bicep template:
 
-![Hardcoded Parameters](https://github.com/Ruthhl3ss/AzureDevOpsCourse/blob/main/Images/VNethardcodedparameters.png)
+![Hardcoded Parameters](https://github.com/Ruthhl3ss/AzureDevOpsCourse/blob/main/Images/StorageAccounthardcodedparameters.png)
 
 We would like to use this template for multiple customers without changing the template. This objective can be reached by using parameters.
 
@@ -31,6 +31,29 @@ We would like to use this template for multiple customers without changing the t
 
 ### Objective 2 - Add a FileShare to the Storage Account
 
+The second objective is to a FileShare to the Bicep template. This can be achieved in multiple ways. You can add a resource to the bicep template or you can add it to StorageAccount resource within the Bicep template. **Remember to use Parameters**
+
+[Microsoft Doc about Bicep Template for FileShare Deployment](https://docs.microsoft.com/en-us/azure/templates/microsoft.storage/storageaccounts/fileservices/shares?tabs=bicep)
+
 
 ### Objective 3 - Add a Private EndPoint to the Storage Account
 
+**This objective is optional**. If you are way ahead of the rest of colleagues in the class, try to add a private endpoint to your StorageAccount deployment. This requires another resource in the Bicep Template of the StorageAccount . 
+
+[Microsoft Doc about Bicep Template for Route Table Deployment](https://docs.microsoft.com/en-us/azure/templates/microsoft.network/routetables?tabs=bicep)
+
+**Important**, you need to assign a storage account, subnet and group id to the private endpoint in order to complete the deployment.
+
+
+### Objective 4 - Deploy Template via YAML
+
+This is, at least for me, the most important objective. This where it all comes together. We are going to automate the deployment process by using a YAML pipeline in Azure DevOps.
+
+We have the Bicep template which contains the StorageAccount + FileShare( + Private Endpoint). We have added parameters to the template so we can use it for multiple customers. Now we are going to deploy this template via Azure DevOps.
+
+Use this blog to create the Pipeline. **There is a starter YAML File in this repository called StorageAccount.yml use this as your starting point!**
+
+
+[Blog by 4bes.nl about deploying Bicep Templates via Azure DevOps](https://4bes.nl/2021/04/18/step-by-step-deploy-bicep-with-azure-devops-pipelines/)
+
+In the "SupportingFiles" Folder, you will find the ARM template for the empty resource group.
