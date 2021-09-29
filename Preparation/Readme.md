@@ -11,6 +11,6 @@ If you are not already using Visual Studio Code as your IDE, please download and
 
 After that, please install the 'Bicep' language extension for Visual Studio Code. This extension will help you write code more easily.
 
-You can do so
+You can do so by opening VS Code and installing the Extension
 
-![GitHub Logo](/images/BicepExtension.png)
+![Image of BicepExtension](https://github.com/Ruthhl3ss/AzureDevOpsCourse/blob/main/Images/BicepExtension.png)
