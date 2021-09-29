@@ -54,4 +54,10 @@ Lastly, I would advise you to clone this repository in your Visual Studio Code.
 
 Copy the URL of the Repository:
 
-![Image of CopyURL](https://github.com/Ruthhl3ss/AzureDevOpsCourse/blob/main/Images/BicepExtension.png)
+![Image of CopyURL](https://github.com/Ruthhl3ss/AzureDevOpsCourse/blob/main/Images/CloningRepository.png)
+
+After run the following command in GIT bash:
+
+````cmd
+git clone https://github.com/Ruthhl3ss/AzureDevOpsCourse.git
+````
