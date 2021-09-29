@@ -61,3 +61,7 @@ After run the following command in GIT bash:
 ````cmd
 git clone https://github.com/Ruthhl3ss/AzureDevOpsCourse.git
 ````
+
+You can do so by opening a Bash command prompt in VS Code:
+
+![Image of CopyURL](https://github.com/Ruthhl3ss/AzureDevOpsCourse/blob/main/Images/CloningRepository.png)
