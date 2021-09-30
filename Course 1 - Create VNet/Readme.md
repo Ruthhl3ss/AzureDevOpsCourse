@@ -36,7 +36,7 @@ Change these values to parameters:
 
 The second objective is to a subnet to the Bicep template. This can be achieved in multiple ways. You can add a resource to the bicep template or you can add it to VNet resource within the Bicep template. **Remember to use Parameters**
 
-[Microsoft Doc about Bicep Template for Subnet Deployment](https://docs.microsoft.com/en-us/azure/templates/microsoft.network/virtualnetworks/subnets?tabs=bicep)
+[Microsoft Doc about Bicep Template for Subnet Deployment](https://docs.microsoft.com/en-us/azure/templates/microsoft.network/virtualnetworks?tabs=bicep)
 
 
 ### Objective 3 - Adding Routing Table
