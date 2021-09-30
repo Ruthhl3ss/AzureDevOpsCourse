@@ -20,11 +20,18 @@ az deployment group create --resource-group <resource-group-name> --template-fil
 
 ### Objective 1 - Adding Parameters
 
-The first objective is to add parameters. The name and address space of the StorageAccount are now hardcoded in the Bicep template:
+The first objective is to add parameters. The name, location, kind, SKU and access tier of the StorageAccount are now hardcoded in the Bicep template:
 
 ![Hardcoded Parameters](https://github.com/Ruthhl3ss/AzureDevOpsCourse/blob/main/Images/StorageAccounthardcodedparameters.png)
 
-We would like to use this template for multiple customers without changing the template. This objective can be reached by using parameters.
+We would like to use this template for multiple customers without changing the template. This objective can be reached by using parameters. 
+Change these values to parameters:
+
+- name
+- location
+- kind
+- SKU
+- accesstier
 
 [Microsoft Doc about Bicep Parameters](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/parameters)
 

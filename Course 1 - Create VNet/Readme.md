@@ -25,6 +25,10 @@ The first objective is to add parameters. The name and address space of the VNet
 ![Hardcoded Parameters](https://github.com/Ruthhl3ss/AzureDevOpsCourse/blob/main/Images/VNethardcodedparameters.png)
 
 We would like to use this template for multiple customers without changing the template. This objective can be reached by using parameters.
+Change these values to parameters:
+
+- name
+- addressspace
 
 [Microsoft Doc about Bicep Parameters](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/parameters)
 
