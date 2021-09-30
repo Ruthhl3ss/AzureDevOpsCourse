@@ -14,7 +14,9 @@ stages:
 - stage: CreateResourceGroup
   jobs:
   - job: CreateResourceGroup
+    steps:
 
 - stage: CreateVirtualNetwork
   jobs:
   - job: DeployBicepTemplate
+    steps:
