@@ -1,0 +1,20 @@
+
+trigger: none
+
+pool:
+  name: 'Agent Pool Name'
+
+variables:
+  vnetname: 'example'
+  subnetname: ''
+  location: 'westeurope'
+
+
+stages:
+- stage: CreateResourceGroup
+  jobs:
+  - job: CreateResourceGroup
+
+- stage: CreateVirtualNetwork
+  jobs:
+  - job: DeployBicepTemplate
