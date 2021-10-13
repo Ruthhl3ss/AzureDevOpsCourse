@@ -13,7 +13,7 @@ az login
 
 az account set --subscription <subscription id>
 
-az group create --location <westeurope> --name <biceptesting>
+az group create --location <location> --name <biceptesting>
 
 az deployment group create --resource-group <resource-group-name> --template-file <path-to-template> --parameters <parameters>
 ````
